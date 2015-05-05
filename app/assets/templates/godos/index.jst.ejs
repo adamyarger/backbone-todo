@@ -1,0 +1,16 @@
+<button id="refresh"> Refresh </button>
+
+<ul>
+	<% godos.each(function(godo) { %>
+		<li>
+			<a href='#/godos/<%= godo.escape("id") %>''>
+				<%= godo.escape('title') %>
+			</a>
+		</li>
+	<% }) %>
+</ul>
+
+<div id="godo-new"></div>
+
+<a href="#/godos/new">New Todo</a>
+

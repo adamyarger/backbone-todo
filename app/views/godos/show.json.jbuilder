@@ -1,0 +1,1 @@
+json.partial!("godos/godo", :godo => @godo, :comments => @comments)
